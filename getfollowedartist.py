@@ -30,6 +30,10 @@ def get_followed_artists(sp):
     return followed_artists
 
 # Retrieve and print the followed artists
-followed_artists = get_followed_artists(sp)
-for artist in followed_artists:
-    print(artist['name'])
+def main():
+    followed_artists = get_followed_artists(sp)
+    for artist in followed_artists:
+        print(artist['name'])
+
+if __name__ == '__main__':
+    main()
